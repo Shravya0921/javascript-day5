@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         /*print numbers from 1-10 and 10-1
+    without using < or > operators*/
+
+    let input_function = prompt("enter number");
+function printAscending(start, end) {
+    let diff = start - end;
+    let arr = Array.from({ length: Math.abs(diff) + 1 }, (_, i) => start + i * (diff === 0 ? 1 : diff / Math.abs(diff)));
+    console.log(arr.join(' '));
+}
+function printDescending(start, end) {
+    let diff = start - end;
+    let arr = Array.from({ length: Math.abs(diff) + 1 }, (_, i) => start - i * (diff === 0 ? 1 : diff / Math.abs(diff)));
+    console.log(arr.join(' '));
+}
+
+printAscending(1, 10);
+printDescending(10, 1);
+
+/*print the sum of number upto 20*/
+
+let input_sum = prompt("enter the number");
+
+let sum = 0;
+for (var i = 1; i <= 20; i++) {
+    sum += i;
+}
+console.log("Sum of numbers up to 20:", sum);
+
+
+
+/*print the sum of even numbers upto 50*/
+
+
+
+let Sum = 0;
+for (var i = 2; i <= 50; i += 2) {
+    sum += i;
+}
+console.log("Sum of even numbers up to 50:", sum);
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
